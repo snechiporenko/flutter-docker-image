@@ -26,6 +26,13 @@ RUN apt-get update \
             ninja-build \
             pkg-config \
     \
+ # Install nodejs and firebase-tools
+ && curl -sL https://deb.nodesource.com/setup_20.x | bash - \
+ && apt-get install --no-install-recommends  -y \
+    nodejs=20.* \
+ && npm install -g n@9.* && n 18 && n 20 \
+ && npm install -g firebase-tools@13.* \
+    \    
  # Install Flutter itself
  && curl -fL -o /tmp/flutter.tar.xz \
          https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${flutter_ver}-stable.tar.xz \
