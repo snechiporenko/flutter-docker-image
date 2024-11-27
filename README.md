@@ -117,3 +117,8 @@ If you have any problems with or questions about this image, please contact us t
 [92]: https://github.com/flutter/flutter/blob/master/LICENSE
 
 [201]: https://github.com/instrumentisto/flutter-docker-image/blob/main/Dockerfile
+
+
+## BUILD
+docker buildx build --platform linux/amd64 --tag 'sirjo/flutter-deploy:3.24.5' .
+docker push 'sirjo/flutter-deploy:3.24.5'
