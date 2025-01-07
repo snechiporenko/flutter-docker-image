@@ -120,5 +120,5 @@ If you have any problems with or questions about this image, please contact us t
 
 
 ## BUILD
-docker buildx build --platform linux/amd64 --tag 'sirjo/flutter-deploy:3.24.5' .
-docker push 'sirjo/flutter-deploy:3.24.5'
+docker buildx build --platform linux/amd64 --tag 'sirjo/flutter-deploy:3.27.1' .
+docker push 'sirjo/flutter-deploy:3.27.1'
